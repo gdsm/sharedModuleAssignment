@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol NetworkProtocol {
-    func request<T: Codable>(urlRequest: URLRequest) async throws -> Result<T, ServiceError>
+    func request<T: Codable>(urlRequest: URLRequest) async throws -> T
 }
 
 public enum HTTPMethod: String {

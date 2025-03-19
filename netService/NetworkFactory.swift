@@ -10,7 +10,7 @@ import Foundation
 public struct NetworkFactory {
     
     public static func getService() -> NetworkProtocol {
-        return NetworkService.getService()
+        return NetworkService.getService(cacheResponse: true)
     }
     
 }
